@@ -1,0 +1,1457 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Merhaba", 
+                "Selam", 
+                "Nasılsın?", 
+                "İyi günler", 
+                "Hey", 
+                "Merhabalar", 
+                "Selamlar", 
+                "Naber", 
+                "Günaydın", 
+                "İyi akşamlar", 
+                "Selam dostum"
+            ],
+            "responses": [
+                "Merhaba! Size nasıl yardımcı olabilirim?", 
+                "Selam! Ne yapmak istersiniz?", 
+                "İyi günler! Size nasıl yardımcı olabilirim?", 
+                "Merhaba! Size ne konuda yardımcı olabilirim?"
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Hoşça kal", 
+                "Görüşürüz", 
+                "İyi günler", 
+                "Güle güle", 
+                "Hoşçakal", 
+                "Sonra görüşürüz", 
+                "Kendine iyi bak", 
+                "Yakında görüşürüz", 
+                "Hadi görüşürüz", 
+                "Allahaısmarladık"
+            ],
+            "responses": [
+                "Hoşça kal! Yakında görüşmek üzere.", 
+                "Görüşürüz! İyi günler dilerim.", 
+                "Güle güle! Tekrar bekleriz.", 
+                "Hoşça kalın! Yakında görüşmek üzere."
+            ]
+        },
+        {
+            "tag": "hours",
+            "patterns": [
+                "Çalışma saatleriniz nedir?", 
+                "Saat kaçta açılıyorsunuz?", 
+                "Saat kaçta kapanıyorsunuz?", 
+                "Çalışma saatleri nelerdir?", 
+                "Hangi saatlerde açığız?", 
+                "Hangi saatlerde kapalıyız?", 
+                "Açılış saatleriniz neler?", 
+                "Kaçta açıyorsunuz?", 
+                "Kaçta kapanıyorsunuz?", 
+                "Çalışma saatleriniz ne zaman?"
+            ],
+            "responses": [
+                "Biz her gün sabah 9'dan gece 1'a kadar açığız.", 
+                "Çalışma saatlerimiz sabah 9 ile gece 1 arasıdır.", 
+                "Haftanın her günü sabah 9'dan gece 1'a kadar hizmet veriyoruz."
+            ]
+        },
+        {
+            "tag": "location",
+            "patterns": [
+                "Neredesiniz?", 
+                "Adresiniz nedir?", 
+                "Lokasyonunuz nerede?", 
+                "Restoranınız nerede?", 
+                "Adresinizi öğrenebilir miyim?", 
+                "Konumunuz neresi?", 
+                "yeriniz neresi?", 
+                "Nasıl gelirim?", 
+                "yeriniz nerede?", 
+                "Restoranınızın adresi ne?", 
+                "Hangi şehirde bulunuyorsunuz?", 
+                "Restoranınıza nasıl ulaşabilirim?"
+            ],
+            "responses": [
+                "Biz malatyadayız.", 
+                "Restoranımız malatyadadır."
+            ]
+        },
+        
+        {
+            "tag": "reservation",
+            "patterns": [
+                "Rezervasyon yapabilir miyim?", 
+                "Rezervasyon nasıl yapabilirim?", 
+                "Masa ayırtabilir miyim?", 
+                "Rezervasyon için bilgi alabilir miyim?", 
+                "Rezervasyon yapıyor musunuz?", 
+                "Nasıl rezervasyon yapabilirim?", 
+                "Önceden masa ayırtabilir miyim?", 
+                "Rezervasyon hizmetiniz var mı?", 
+                "Masa rezervasyonu yapabilir miyim?", 
+                "Rezervasyon yapmak istiyorum."
+            ],
+            "responses": [
+                "Evet, rezervasyon yapabilirsiniz. Rezervasyon yapmak için web sitemizi üzerinde yapabilirsiniz veya bizi arayabilirsiniz.", 
+                "Rezervasyon için web sitemizden veya telefonla bize ulaşarak masa ayırtabilirsiniz."
+            ]
+        },
+        {
+            "tag": "meat_availability",
+            "patterns": [
+                "Et var mı?", 
+                "Et çeşitleri var mı?", 
+                "Etli yemekler var mı?", 
+                "Et yemekleri var mı?", 
+                "Menünüzde et var mı?", 
+                "Et yemeği servisi var mı?", 
+                "Etli yemek servisi yapıyor musunuz?", 
+                "Et yemekleri mevcut mu?", 
+                "Etli yemek seçenekleriniz var mı?", 
+                "Et sunuyor musunuz?"
+            ],
+            "responses": [
+                "Bizde et veya etli yemekler mevcut değil.", 
+                "Menümüzde et ve etli yemek seçenekleri bulunmamaktadır.", 
+                "Malesef, biz etli yemek servisi yapmıyoruz."
+            ]
+        },
+        {
+            "tag": "discount",
+            "patterns": [
+                "indirim kazanabilir miyim?", 
+                "indirim nasıl alabilirim?", 
+                "indirim almak için ne yapmam gerekyor?", 
+                "indirim istiyorum", 
+                "indirim istemek mumkunmu?", 
+                "Nasıl indirim kazanabilirim?"
+                
+            ],
+            "responses": [
+                "tabi, %25 indirim kadanmak için bize sitemizin üzerinde abone olmanız yeterlidir ."
+            ]
+        },
+        {
+            "tag": "delivery",
+            "patterns": [
+                "Eve servisiniz var mı?", 
+                "Paket servis yapıyor musunuz?", 
+                "Sipariş verebilir miyim?", 
+                "Yemek siparişi verebilir miyim?", 
+                "Eve teslimat yapıyor musunuz?", 
+                "Paket servisiniz mevcut mu?", 
+                "Yemek sipariş edebilir miyim?", 
+                "Teslimat hizmetiniz var mı?", 
+                "Eve servis yapıyor musunuz?", 
+                "Paket servis hizmetiniz var mı?"
+            ],
+            "responses": [
+                "Evet, paket servisimiz vardır. Sipariş vermek için  bizi arayabilirsiniz.", 
+                "Eve servisimiz mevcuttur. Sipariş için  telefonla bize ulaşabilirsiniz."
+            ]
+        },
+        {
+            "tag": "specials",
+            "patterns": [
+                "Bugün özel bir menünüz var mı?", 
+                "Günün spesiyali nedir?", 
+                "Özel yemekleriniz var mı?", 
+                "Spesiyalleriniz nelerdir?", 
+                "Günün menüsü nedir?", 
+                "Bugün hangi özel yemekler var?", 
+                "Bugün için özel yemekler neler?", 
+                "Günün özel yemekleri neler?", 
+                "Özel menünüz var mı?", 
+                "Spesiyal yemekleriniz nelerdir?"
+            ],
+            "responses": [
+                "Bugünün spesiyali Izgara Levrek ve Fırında Kuzu İnciktir. Diğer spesiyallerimizi görmek için menümüze göz atabilirsiniz.", 
+                "Bugün için özel menümüzde Izgara Levrek ve Fırında Kuzu İncik bulunuyor. Daha fazla bilgi için menümüze göz atabilirsiniz."
+            ]
+        },
+        {
+            "tag": "payment",
+            "patterns": [
+                "Hangi ödeme yöntemlerini kabul ediyorsunuz?", 
+                "Kredi kartı ile ödeme yapabilir miyim?", 
+                "Nakit ödeme kabul ediyor musunuz?", 
+                "Ödeme seçenekleriniz nelerdir?", 
+                "Hangi ödeme yöntemleri mevcut?", 
+                "Ödeme şekilleriniz nelerdir?", 
+                "Kredi kartı kabul ediyor musunuz?", 
+                "Online ödeme yapabilir miyim?", 
+                "Ödeme yöntemleriniz neler?", 
+                "Nakit ödeme yapabilir miyim?"
+            ],
+            "responses": [
+                "Kredi kartı, banka kartı ve nakit ödeme kabul ediyoruz. ", 
+                "Ödeme yöntemlerimiz arasında kredi kartı, banka kartı ve nakit bulunmaktadır."
+            ]
+        },
+        {
+            "tag": "chef_specials",
+            "patterns": [
+                "Şefin özel yemekleri nelerdir?", 
+                "Şefin tavsiyeleri nelerdir?", 
+                "Şefin spesiyalleri nedir?", 
+                "Şefin önerdiği yemekler nelerdir?", 
+                "Şefin menüsü nedir?", 
+                "Şefin özel yemekleri var mı?", 
+                "Şefin özel tarifleri neler?", 
+                "Şefin tavsiye ettiği yemekler nelerdir?", 
+                "Şefin favori yemekleri nelerdir?", 
+                "Şefin spesiyal tarifleri neler?"
+            ],
+            "responses": [
+                "Şefimizin özel yemekleri arasında Izgara Levrek, Fırında Kuzu İncik ve Özel Soslu Tavuk bulunmaktadır.", 
+                "Şefimizin tavsiye ettiği yemekler arasında Izgara Levrek, Fırında Kuzu İncik ve Özel Soslu Tavuk yer alıyor."
+            ]
+        },
+        {
+            "tag": "events",
+            "patterns": [
+                "Özel etkinlikler düzenliyor musunuz?", 
+                "Restoranınızda etkinlik yapabilir miyim?", 
+                "Özel günler için mekan kiralanabilir mi?", 
+                "Etkinlikler için rezervasyon yapıyor musunuz?", 
+                "Restoranınızda düğün yapılabilir mi?", 
+                "Özel etkinlikler için yer ayırtabilir miyim?", 
+                "Doğum günü partisi düzenleyebilir miyim?", 
+                "Etkinlikler için mekanınızı kullanabilir miyim?", 
+                "Özel günler için mekanınızı kiralayabilir miyim?", 
+                "Restoranınızda etkinlik düzenleyebilir miyim?"
+            ],
+            "responses": [
+                "Evet, restoranımızda özel etkinlikler düzenleyebilirsiniz. Daha fazla bilgi için bizimle iletişime geçebilirsiniz.", 
+                "Özel günler ve etkinlikler için restoranımızı kiralayabilirsiniz. Detaylı bilgi için lütfen bizimle iletişime geçin."
+            ]
+        },
+        {
+            "tag": "allergies",
+            "patterns": [
+                "Yemeklerinizde alerjen var mı?", 
+                "Alerjim var, ne yapmalıyım?", 
+                "Alerjen bilgisi verebilir misiniz?", 
+                "Yemeklerinizdeki alerjenler hakkında bilgi alabilir miyim?", 
+                "Alerjiye uygun yemekleriniz var mı?", 
+                "Alerjiye uygun yemek seçenekleri nelerdir?", 
+                "Alerji bilgisi alabilir miyim?", 
+                "Alerjiye duyarlı yemekler var mı?", 
+                "Yemeklerinizde hangi alerjenler var?", 
+                "Alerjisi olanlar için yemekleriniz var mı?"
+            ],
+            "responses": [
+                "Evet, yemeklerimizdeki alerjenler hakkında bilgi verebiliriz. Garsonlarımızdan  detaylı bilgi alabilirsiniz.", 
+                "Alerjiye uygun yemek seçeneklerimiz mevcuttur. Yemeklerimizdeki alerjenler hakkında bilgi almak için garsonlarımızdan  bilgi alabilirsiniz."
+            ]
+        },
+        {
+            "tag": "dietary_restrictions",
+            "patterns": [
+                "Diyet kısıtlamalarına uygun yemekler var mı?", 
+                "Diyet yemekler sunuyor musunuz?", 
+                "Diyet menünüz var mı?", 
+                "Diyet yemekleriniz nelerdir?", 
+                "Diyet kısıtlamalarına uygun menünüz var mı?", 
+                "Diyet yemek seçenekleriniz nelerdir?", 
+                "Diyet yemekleri sunuyor musunuz?", 
+                "Diyet menüsü mevcut mu?", 
+                "Diyet kısıtlamalarına uygun yemek seçenekleri var mı?", 
+                "Diyet yemekleriniz nelerdir?"
+            ],
+            "responses": [
+                "Evet, diyet kısıtlamalarına uygun yemek seçeneklerimiz mevcuttur. Diyet menümüzde düşük kalorili ve sağlıklı yemekler bulunmaktadır.", 
+                "Diyet menümüzde düşük kalorili ve sağlıklı yemekler yer almaktadır. Daha fazla bilgi için menümüze göz atabilirsiniz."
+            ]
+        },
+        {
+            "tag": "cold_drinks",
+            "patterns": [
+                "Soğuk içecekleriniz neler?", 
+                "Hangi soğuk içecekleri sunuyorsunuz?", 
+                "Soğuk içecek seçenekleriniz nelerdir?", 
+                "Ne tür soğuk içecekleriniz var?", 
+                "Soğuk içecek menünüzde neler var?"
+            ],
+            "responses": [
+                "Menümüzde Zencefil Limonlu Ballı Çay, michelada kokteyl, frambuazlı soğuk çay, limonlu soğuk çay ve ananas smoothie gibi çeşitli soğuk içecekler bulunmaktadır."
+            ]
+        },
+        {
+            "tag": "hot_drinks",
+            "patterns": [
+                "Sıcak içecekleriniz neler?", 
+                "Hangi sıcak içecekleri sunuyorsunuz?", 
+                "Sıcak içecek seçenekleriniz nelerdir?", 
+                "Ne tür sıcak içecekleriniz var?", 
+                "Sıcak içecek menünüzde neler var?"
+            ],
+            "responses": [
+                "Menümüzde siyah çay ve Türk kahvesi gibi çeşitli sıcak içecekler bulunmaktadır."
+            ]
+        },
+        {
+            "tag": "main_courses",
+            "patterns": [
+                "Ana yemekleriniz neler?", 
+                "Hangi ana yemekleri sunuyorsunuz?", 
+                "Ana yemek seçenekleriniz nelerdir?", 
+                "Ne tür ana yemekleriniz var?", 
+                "Ana yemek menünüzde neler var?"
+            ],
+            "responses": [
+                "Menümüzde Fransız Tako, tavuk çevirme, tavuk ve dumpling, kabak lazanya, tavuk adobo, kaşarlı pizza, sebzeli pizza ve tavuk tinga gibi çeşitli ana yemekler bulunmaktadır."
+            ]
+        },
+        {
+            "tag": "french_tacos_drink",
+            "patterns": [
+                "Fransız Tako ile hangi içeceği önerirsiniz?", 
+                "Fransız Tako ile uyumlu içecek nedir?", 
+                "Fransız Tako ile hangi içecek iyi gider?", 
+                "Fransız Tako ile hangi içeceği tercih etmeliyim?", 
+                "Fransız Tako ile ne içmeliyim?",
+                "Fransız Tako ile ne içmek iyi olur?",
+                "Fransız Tako'ya hangi içecek gider?",
+                "Fransız Tako için içecek önerir misiniz?",
+                "Fransız Tako'nun yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Fransız Tako ile birlikte Zencefil Limonlu Ballı Çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "rotisserie_chicken_drink",
+            "patterns": [
+                "Tavuk çevirme ile hangi içeceği önerirsiniz?", 
+                "Tavuk çevirme ile uyumlu içecek nedir?", 
+                "Tavuk çevirme ile hangi içecek iyi gider?", 
+                "Tavuk çevirme ile hangi içeceği tercih etmeliyim?", 
+                "Tavuk çevirme ile ne içmeliyim?",
+                "Tavuk çevirme ile ne içmek iyi olur?",
+                "Tavuk çevirme'ye hangi içecek gider?",
+                "Tavuk çevirme için içecek önerir misiniz?",
+                "Tavuk çevirme'nin yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Tavuk çevirme ile birlikte michelada kokteyl öneriyoruz."
+            ]
+        },
+        {
+            "tag": "chicken_and_dumplings_drink",
+            "patterns": [
+                "Tavuk ve dumpling ile hangi içeceği önerirsiniz?", 
+                "Tavuk ve dumpling ile uyumlu içecek nedir?", 
+                "Tavuk ve dumpling ile hangi içecek iyi gider?", 
+                "Tavuk ve dumpling ile hangi içeceği tercih etmeliyim?", 
+                "Tavuk ve dumpling ile ne içmeliyim?",
+                "Tavuk ve dumpling ile ne içmek iyi olur?",
+                "Tavuk ve dumpling'e hangi içecek gider?",
+                "Tavuk ve dumpling için içecek önerir misiniz?",
+                "Tavuk ve dumpling'in yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Tavuk ve dumpling ile birlikte frambuazlı soğuk çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "zucchini_lasagna_drink",
+            "patterns": [
+                "Kabak lazanya ile hangi içeceği önerirsiniz?", 
+                "Kabak lazanya ile uyumlu içecek nedir?", 
+                "Kabak lazanya ile hangi içecek iyi gider?", 
+                "Kabak lazanya ile hangi içeceği tercih etmeliyim?", 
+                "Kabak lazanya ile ne içmeliyim?",
+                "Kabak lazanya ile ne içmek iyi olur?",
+                "Kabak lazanya'ya hangi içecek gider?",
+                "Kabak lazanya için içecek önerir misiniz?",
+                "Kabak lazanya'nın yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Kabak lazanya ile birlikte limonlu soğuk çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "chicken_adobo_drink",
+            "patterns": [
+                "Tavuk adobo ile hangi içeceği önerirsiniz?", 
+                "Tavuk adobo ile uyumlu içecek nedir?", 
+                "Tavuk adobo ile hangi içecek iyi gider?", 
+                "Tavuk adobo ile hangi içeceği tercih etmeliyim?", 
+                "Tavuk adobo ile ne içmeliyim?",
+                "Tavuk adobo ile ne içmek iyi olur?",
+                "Tavuk adobo'ya hangi içecek gider?",
+                "Tavuk adobo için içecek önerir misiniz?",
+                "Tavuk adobo'nun yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Tavuk adobo ile birlikte ananas smoothie öneriyoruz."
+            ]
+        },
+        {
+            "tag": "cheese_pizza_drink",
+            "patterns": [
+                "Kaşarlı pizza ile hangi içeceği önerirsiniz?", 
+                "Kaşarlı pizza ile uyumlu içecek nedir?", 
+                "Kaşarlı pizza ile hangi içecek iyi gider?", 
+                "Kaşarlı pizza ile hangi içeceği tercih etmeliyim?", 
+                "Kaşarlı pizza ile ne içmeliyim?",
+                "Kaşarlı pizza ile ne içmek iyi olur?",
+                "Kaşarlı pizza'ya hangi içecek gider?",
+                "Kaşarlı pizza için içecek önerir misiniz?",
+                "Kaşarlı pizza'nın yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Kaşarlı pizza ile birlikte frambuazlı soğuk çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "vegetable_pizza_drink",
+            "patterns": [
+                "Sebzeli pizza ile hangi içeceği önerirsiniz?", 
+                "Sebzeli pizza ile uyumlu içecek nedir?", 
+                "Sebzeli pizza ile hangi içecek iyi gider?", 
+                "Sebzeli pizza ile hangi içeceği tercih etmeliyim?", 
+                "Sebzeli pizza ile ne içmeliyim?",
+                "Sebzeli pizza ile ne içmek iyi olur?",
+                "Sebzeli pizza'ya hangi içecek gider?",
+                "Sebzeli pizza için içecek önerir misiniz?",
+                "Sebzeli pizza'nın yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Sebzeli pizza ile birlikte limonlu soğuk çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "chicken_tinga_drink",
+            "patterns": [
+                "Tavuk tinga ile hangi içeceği önerirsiniz?", 
+                "Tavuk tinga ile uyumlu içecek nedir?", 
+                "Tavuk tinga ile hangi içecek iyi gider?", 
+                "Tavuk tinga ile hangi içeceği tercih etmeliyim?", 
+                "Tavuk tinga ile ne içmeliyim?",
+                "Tavuk tinga ile ne içmek iyi olur?",
+                "Tavuk tinga'ya hangi içecek gider?",
+                "Tavuk tinga için içecek önerir misiniz?",
+                "Tavuk tinga'nın yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Tavuk tinga ile birlikte michelada kokteyl öneriyoruz."
+            ]
+        },
+        {
+            "tag": "breakfast",
+            "patterns": [
+                "Kahvaltıda ne sunuyorsunuz?", 
+                "Kahvaltı menünüzde neler var?", 
+                "Kahvaltı seçenekleriniz nelerdir?", 
+                "Ne tür kahvaltılıklarınız var?", 
+                "Kahvaltı menünüzde hangi yemekler var?"
+            ],
+            "responses": [
+                "Menümüzde kabarık vegan pankek, proteinli yulaf ezmesi, fırında yumurtalı muffin, klasik Fransız tostu, mantarlı omlet ve protein pankek gibi çeşitli kahvaltılıklar bulunmaktadır."
+            ]
+        },
+        {
+            "tag": "vegan_pancakes_drink",
+            "patterns": [
+                "Kabarık vegan pankek ile hangi içeceği önerirsiniz?", 
+                "Kabarık vegan pankek ile uyumlu içecek nedir?", 
+                "Kabarık vegan pankek ile hangi içecek iyi gider?", 
+                "Kabarık vegan pankek ile hangi içeceği tercih etmeliyim?", 
+                "Kabarık vegan pankek ile ne içmeliyim?",
+                "Kabarık vegan pankek ile ne içmek iyi olur?",
+                "Kabarık vegan pankek'e hangi içecek gider?",
+                "Kabarık vegan pankek için içecek önerir misiniz?",
+                "Kabarık vegan pankek'in yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Kabarık vegan pankek ile birlikte siyah çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "protein_oatmeal_drink",
+            "patterns": [
+                "Proteinli yulaf ezmesi ile hangi içeceği önerirsiniz?", 
+                "Proteinli yulaf ezmesi ile uyumlu içecek nedir?", 
+                "Proteinli yulaf ezmesi ile hangi içecek iyi gider?", 
+                "Proteinli yulaf ezmesi ile hangi içeceği tercih etmeliyim?", 
+                "Proteinli yulaf ezmesi ile ne içmeliyim?",
+                "Proteinli yulaf ezmesi ile ne içmek iyi olur?",
+                "Proteinli yulaf ezmesi'ne hangi içecek gider?",
+                "Proteinli yulaf ezmesi için içecek önerir misiniz?",
+                "Proteinli yulaf ezmesi'nin yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Proteinli yulaf ezmesi ile birlikte siyah çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "egg_muffin_drink",
+            "patterns": [
+                "Fırında yumurtalı muffin ile hangi içeceği önerirsiniz?", 
+                "Fırında yumurtalı muffin ile uyumlu içecek nedir?", 
+                "Fırında yumurtalı muffin ile hangi içecek iyi gider?", 
+                "Fırında yumurtalı muffin ile hangi içeceği tercih etmeliyim?", 
+                "Fırında yumurtalı muffin ile ne içmeliyim?",
+                "Fırında yumurtalı muffin ile ne içmek iyi olur?",
+                "Fırında yumurtalı muffin'e hangi içecek gider?",
+                "Fırında yumurtalı muffin için içecek önerir misiniz?",
+                "Fırında yumurtalı muffin'in yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Fırında yumurtalı muffin ile birlikte siyah çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "french_toast_drink",
+            "patterns": [
+                "Klasik Fransız tostu ile hangi içeceği önerirsiniz?", 
+                "Klasik Fransız tostu ile uyumlu içecek nedir?", 
+                "Klasik Fransız tostu ile hangi içecek iyi gider?", 
+                "Klasik Fransız tostu ile hangi içeceği tercih etmeliyim?", 
+                "Klasik Fransız tostu ile ne içmeliyim?",
+                "Klasik Fransız tostu ile ne içmek iyi olur?",
+                "Klasik Fransız tostu'na hangi içecek gider?",
+                "Klasik Fransız tostu için içecek önerir misiniz?",
+                "Klasik Fransız tostu'nun yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Klasik Fransız tostu ile birlikte Türk kahvesi öneriyoruz."
+            ]
+        },
+        {
+            "tag": "mushroom_omelette_drink",
+            "patterns": [
+                "Mantarlı omlet ile hangi içeceği önerirsiniz?", 
+                "Mantarlı omlet ile uyumlu içecek nedir?", 
+                "Mantarlı omlet ile hangi içecek iyi gider?", 
+                "Mantarlı omlet ile hangi içeceği tercih etmeliyim?", 
+                "Mantarlı omlet ile ne içmeliyim?",
+                "Mantarlı omlet ile ne içmek iyi olur?",
+                "Mantarlı omlet'e hangi içecek gider?",
+                "Mantarlı omlet için içecek önerir misiniz?",
+                "Mantarlı omlet'in yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Mantarlı omlet ile birlikte siyah çay öneriyoruz."
+            ]
+        },
+        {
+            "tag": "protein_pancakes_drink",
+            "patterns": [
+                "Protein pankek ile hangi içeceği önerirsiniz?", 
+                "Protein pankek ile uyumlu içecek nedir?", 
+                "Protein pankek ile hangi içecek iyi gider?", 
+                "Protein pankek ile hangi içeceği tercih etmeliyim?", 
+                "Protein pankek ile ne içmeliyim?",
+                "Protein pankek ile ne içmek iyi olur?",
+                "Protein pankek'e hangi içecek gider?",
+                "Protein pankek için içecek önerir misiniz?",
+                "Protein pankek'in yanına ne içebilirim?"
+            ],
+            "responses": [
+                "Protein pankek ile birlikte Türk kahvesi öneriyoruz."
+            ]
+        },
+        {
+            "tag": "vegan_pancakes_description",
+            "patterns": [
+                "Kabarık vegan pankek ne içeriyor?", 
+                "Kabarık vegan pankek tarifi nedir?", 
+                "Kabarık vegan pankek nasıl yapılır?", 
+                "Kabarık vegan pankek içinde ne var?", 
+                "Kabarık vegan pankek malzemeleri nelerdir?",
+                "Kabarık vegan pankek içeriği nedir?",
+                "Kabarık vegan pankek nedir?",
+                "Kabarık vegan pankek yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Kabarık vegan pankek, un, badem sütü, kabartma tozu, elma püresi, vanilya özütü ve akçaağaç şurubu ile yapılır."
+            ]
+        },
+        {
+            "tag": "protein_oatmeal_description",
+            "patterns": [
+                "Proteinli yulaf ezmesi ne içeriyor?", 
+                "Proteinli yulaf ezmesi tarifi nedir?", 
+                "Proteinli yulaf ezmesi nasıl yapılır?", 
+                "Proteinli yulaf ezmesi içinde ne var?", 
+                "Proteinli yulaf ezmesi malzemeleri nelerdir?",
+                "Proteinli yulaf ezmesi içeriği nedir?",
+                "Proteinli yulaf ezmesi nedir?",
+                "Proteinli yulaf ezmesi yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Proteinli yulaf ezmesi, yulaf, protein tozu, badem sütü, bal ve çeşitli meyveler ile yapılır."
+            ]
+        },
+        {
+            "tag": "french_toast_description",
+            "patterns": [
+                "Klasik Fransız tostu ne içeriyor?", 
+                "Klasik Fransız tostu tarifi nedir?", 
+                "Klasik Fransız tostu nasıl yapılır?", 
+                "Klasik Fransız tostu içinde ne var?", 
+                "Klasik Fransız tostu malzemeleri nelerdir?",
+                "Klasik Fransız tostu içeriği nedir?",
+                "Klasik Fransız tostu nedir?",
+                "Klasik Fransız tostu yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Klasik Fransız tostu, yumurta, süt, vanilya, tarçın ve ekmek dilimleri ile yapılır. Üzerine pudra şekeri serpilerek servis edilir."
+            ]
+        },
+        {
+            "tag": "egg_muffin_description",
+            "patterns": [
+                "Fırında yumurtalı muffin ne içeriyor?", 
+                "Fırında yumurtalı muffin tarifi nedir?", 
+                "Fırında yumurtalı muffin nasıl yapılır?", 
+                "Fırında yumurtalı muffin içinde ne var?", 
+                "Fırında yumurtalı muffin malzemeleri nelerdir?",
+                "Fırında yumurtalı muffin içeriği nedir?",
+                "Fırında yumurtalı muffin nedir?",
+                "Fırında yumurtalı muffin yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Fırında yumurtalı muffin, yumurta, süt, peynir, biber, ıspanak ve tuz ile yapılır."
+            ]
+        },
+        {
+            "tag": "protein_pancakes_description",
+            "patterns": [
+                "Protein pankek ne içeriyor?", 
+                "Protein pankek tarifi nedir?", 
+                "Protein pankek nasıl yapılır?", 
+                "Protein pankek içinde ne var?", 
+                "Protein pankek malzemeleri nelerdir?",
+                "Protein pankek içeriği nedir?",
+                "Protein pankek nedir?",
+                "Protein pankek yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Protein pankek, yulaf ezmesi, muz, yumurta, protein tozu ve kabartma tozu ile yapılır."
+            ]
+        },
+        {
+            "tag": "mushroom_omelette_description",
+            "patterns": [
+                "Mantarlı omlet ne içeriyor?", 
+                "Mantarlı omlet tarifi nedir?", 
+                "Mantarlı omlet nasıl yapılır?", 
+                "Mantarlı omlet içinde ne var?", 
+                "Mantarlı omlet malzemeleri nelerdir?",
+                "Mantarlı omlet içeriği nedir?",
+                "Mantarlı omlet nedir?",
+                "Mantarlı omlet yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Mantarlı omlet, yumurta, mantar, soğan, biber, süt ve peynir ile yapılır."
+            ]
+        },
+        {
+            "tag": "french_tacos_description",
+            "patterns": [
+                "Fransız Tako ne içeriyor?", 
+                "Fransız Tako tarifi nedir?", 
+                "Fransız Tako nasıl yapılır?", 
+                "Fransız Tako içinde ne var?", 
+                "Fransız Tako malzemeleri nelerdir?",
+                "Fransız Tako içeriği nedir?",
+                "Fransız Tako nedir?",
+                "Fransız Tako yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Fransız Tako, tortilla ekmeği, kıyma, soğan, biber, sarımsak, baharatlar ve peynir ile yapılır."
+            ]
+        },
+        {
+            "tag": "chicken_and_dumplings_description",
+            "patterns": [
+                "Tavuk ve dumpling ne içeriyor?", 
+                "Tavuk ve dumpling tarifi nedir?", 
+                "Tavuk ve dumpling nasıl yapılır?", 
+                "Tavuk ve dumpling içinde ne var?", 
+                "Tavuk ve dumpling malzemeleri nelerdir?",
+                "Tavuk ve dumpling içeriği nedir?",
+                "Tavuk ve dumpling nedir?",
+                "Tavuk ve dumpling yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Tavuk ve dumpling, tavuk göğsü, sebzeler, un, süt ve baharatlar ile yapılır."
+            ]
+        },
+        {
+            "tag": "zucchini_lasagna_description",
+            "patterns": [
+                "Kabak lazanya ne içeriyor?", 
+                "Kabak lazanya tarifi nedir?", 
+                "Kabak lazanya nasıl yapılır?", 
+                "Kabak lazanya içinde ne var?", 
+                "Kabak lazanya malzemeleri nelerdir?",
+                "Kabak lazanya içeriği nedir?",
+                "Kabak lazanya nedir?",
+                "Kabak lazanya yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Kabak lazanya, kabak dilimleri, domates sosu, ricotta peyniri, mozzarella ve baharatlar ile yapılır."
+            ]
+        },
+        {
+            "tag": "cheese_pizza_description",
+            "patterns": [
+                "Karışık pizza ne içeriyor?", 
+                "Karışık pizza tarifi nedir?", 
+                "Karışık pizza nasıl yapılır?", 
+                "Karışık pizza içinde ne var?", 
+                "Karışık pizza malzemeleri nelerdir?",
+                "Karışık pizza içeriği nedir?",
+                "Karışık pizza nedir?",
+                "Karışık pizza yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Karışık pizza, pizza hamuru, domates sosu, mozzarella, sosis, mantar, biber ve zeytin ile yapılır."
+            ]
+        },
+        {
+            "tag": "rotisserie_chicken_description",
+            "patterns": [
+                "Tavuk çevirme ne içeriyor?", 
+                "Tavuk çevirme tarifi nedir?", 
+                "Tavuk çevirme nasıl yapılır?", 
+                "Tavuk çevirme içinde ne var?", 
+                "Tavuk çevirme malzemeleri nelerdir?",
+                "Tavuk çevirme içeriği nedir?",
+                "Tavuk çevirme nedir?",
+                "Tavuk çevirme yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Tavuk çevirme, bütün tavuk, zeytinyağı, sarımsak, limon, taze otlar ve baharatlar ile yapılır."
+            ]
+        },
+        {
+            "tag": "chicken_adobo_description",
+            "patterns": [
+                "Tavuk adobo ne içeriyor?", 
+                "Tavuk adobo tarifi nedir?", 
+                "Tavuk adobo nasıl yapılır?", 
+                "Tavuk adobo içinde ne var?", 
+                "Tavuk adobo malzemeleri nelerdir?",
+                "Tavuk adobo içeriği nedir?",
+                "Tavuk adobo nedir?",
+                "Tavuk adobo yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Tavuk adobo, tavuk butları, soya sosu, sirke, sarımsak, biber ve defne yaprağı ile yapılır."
+            ]
+        },
+        {
+            "tag": "vegetable_pizza_description",
+            "patterns": [
+                "Sebzeli pizza ne içeriyor?", 
+                "Sebzeli pizza tarifi nedir?", 
+                "Sebzeli pizza nasıl yapılır?", 
+                "Sebzeli pizza içinde ne var?", 
+                "Sebzeli pizza malzemeleri nelerdir?",
+                "Sebzeli pizza içeriği nedir?",
+                "Sebzeli pizza nedir?",
+                "Sebzeli pizza yapılışı nasıldır?"
+            ],
+            "responses": [
+                "Sebzeli pizza, pizza hamuru, domates sosu, mozzarella, mantar, biber, kabak ve ıspanak ile yapılır."
+            ]
+        },
+        {
+            "tag": "vegan_meals",
+            "patterns": [
+                "Vegan yemekler nelerdir?",
+                "Hangi yemekler vegan?",
+                "Vegan yemek seçenekleriniz neler?",
+                "Vegan yemeklerinizin içeriği nedir?",
+                "Vegan yemekler hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Vegan yemeklerimiz: Kabarık vegan pankek ve sebzeli pizza. Kabarık vegan pankek 100 TL, sebzeli pizza 400 TL."
+            ]
+        },
+        {
+            "tag": "high_protein_meals",
+            "patterns": [
+                "Yüksek proteinli yemekler nelerdir?",
+                "Hangi yemekler yüksek protein içerir?",
+                "Yüksek proteinli yemek seçenekleriniz neler?",
+                "Yüksek proteinli yemeklerinizin içeriği nedir?",
+                "Yüksek proteinli yemekler hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Yüksek proteinli yemeklerimiz: Proteinli yulaf ezmesi, tavuk adobo ve karışık pizza. Proteinli yulaf ezmesi 200 TL, tavuk adobo 250 TL, karışık pizza 400 TL."
+            ]
+        },
+        {
+            "tag": "low_calorie_meals",
+            "patterns": [
+                "Az kalorili yemekler nelerdir?",
+                "Hangi yemekler az kalori içerir?",
+                "Az kalorili yemek seçenekleriniz neler?",
+                "Az kalorili yemeklerinizin içeriği nedir?",
+                "Az kalorili yemekler hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Az kalorili yemeklerimiz: Tavuk ve dumpling, tavuk çevirme ve fırında yumurtalı muffin. Tavuk ve dumpling 150 TL, tavuk çevirme 200 TL, fırında yumurtalı muffin 150 TL."
+            ]
+        },
+        {
+            "tag": "new_dish",
+            "patterns": [
+                "Yeni tabak nedir?",
+                "Yeni yemeğiniz nedir?",
+                "Menüdeki yeni yemek ne?",
+                "Yeni yemeklerinizin içeriği nedir?",
+                "Yeni yemek hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Yeni yemeğimiz Fransız Tako. Fiyatı 300 TL."
+            ]
+        },
+        {
+            "tag": "cheapest_dish",
+            "patterns": [
+                "En ucuz tabak nedir?",
+                "En ucuz yemeğiniz nedir?",
+                "Menüdeki en ucuz yemek ne?",
+                "En ucuz yemeklerinizin içeriği nedir?",
+                "En ucuz yemek hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "En ucuz yemeğimiz Kabarık vegan pankek. Fiyatı 100 TL."
+            ]
+        },
+        {
+            "tag": "most_expensive_dish",
+            "patterns": [
+                "En pahalı yemek nedir?",
+                "En pahalı yemeğiniz nedir?",
+                "Menüdeki en pahalı yemek ne?",
+                "En pahalı yemeklerinizin içeriği nedir?",
+                "En pahalı yemek hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "En pahalı yemeklerimiz: Karışık pizza ve sebzeli pizza. Her ikisinin de fiyatı 400 TL."
+            ]
+        },
+        {
+            "tag": "vegan_pancakes_price",
+            "patterns": [
+                "Kabarık vegan pankek fiyatı nedir?",
+                "Kabarık vegan pankek kaç TL?",
+                "Kabarık vegan pankek fiyatı ne kadar?",
+                "Kabarık vegan pankek ne kadar?",
+                "Kabarık vegan pankek ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Kabarık vegan pankek fiyatı 100 TL'dir."
+            ]
+        },
+        {
+            "tag": "vegetable_pizza_price",
+            "patterns": [
+                "Sebzeli pizza fiyatı nedir?",
+                "Sebzeli pizza kaç TL?",
+                "Sebzeli pizza fiyatı ne kadar?",
+                "Sebzeli pizza ne kadar?",
+                "Sebzeli pizza ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Sebzeli pizza fiyatı 400 TL'dir."
+            ]
+        },
+        {
+            "tag": "protein_oatmeal_price",
+            "patterns": [
+                "Proteinli yulaf ezmesi fiyatı nedir?",
+                "Proteinli yulaf ezmesi kaç TL?",
+                "Proteinli yulaf ezmesi fiyatı ne kadar?",
+                "Proteinli yulaf ezmesi ne kadar?",
+                "Proteinli yulaf ezmesi ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Proteinli yulaf ezmesi fiyatı 200 TL'dir."
+            ]
+        },
+        {
+            "tag": "chicken_adobo_price",
+            "patterns": [
+                "Tavuk adobo fiyatı nedir?",
+                "Tavuk adobo kaç TL?",
+                "Tavuk adobo fiyatı ne kadar?",
+                "Tavuk adobo ne kadar?",
+                "Tavuk adobo ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Tavuk adobo fiyatı 250 TL'dir."
+            ]
+        },
+        {
+            "tag": "mixed_pizza_price",
+            "patterns": [
+                "Karışık pizza fiyatı nedir?",
+                "Karışık pizza kaç TL?",
+                "Karışık pizza fiyatı ne kadar?",
+                "Karışık pizza ne kadar?",
+                "Karışık pizza ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Karışık pizza fiyatı 400 TL'dir."
+            ]
+        },
+        {
+            "tag": "chicken_and_dumplings_price",
+            "patterns": [
+                "Tavuk ve dumpling fiyatı nedir?",
+                "Tavuk ve dumpling kaç TL?",
+                "Tavuk ve dumpling fiyatı ne kadar?",
+                "Tavuk ve dumpling ne kadar?",
+                "Tavuk ve dumpling ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Tavuk ve dumpling fiyatı 150 TL'dir."
+            ]
+        },
+        {
+            "tag": "rotisserie_chicken_price",
+            "patterns": [
+                "Tavuk çevirme fiyatı nedir?",
+                "Tavuk çevirme kaç TL?",
+                "Tavuk çevirme fiyatı ne kadar?",
+                "Tavuk çevirme ne kadar?",
+                "Tavuk çevirme ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Tavuk çevirme fiyatı 200 TL'dir."
+            ]
+        },
+        {
+            "tag": "egg_muffin_price",
+            "patterns": [
+                "Fırında yumurtalı muffin fiyatı nedir?",
+                "Fırında yumurtalı muffin kaç TL?",
+                "Fırında yumurtalı muffin fiyatı ne kadar?",
+                "Fırında yumurtalı muffin ne kadar?",
+                "Fırında yumurtalı muffin ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Fırında yumurtalı muffin fiyatı 150 TL'dir."
+            ]
+        },
+        {
+            "tag": "french_tacos_price",
+            "patterns": [
+                "Fransız Tako fiyatı nedir?",
+                "Fransız Tako kaç TL?",
+                "Fransız Tako fiyatı ne kadar?",
+                "Fransız Tako ne kadar?",
+                "Fransız Tako ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Fransız Tako fiyatı 300 TL'dir."
+            ]
+        },
+        {
+            "tag": "zucchini_lasagna_price",
+            "patterns": [
+                "Kabak lazanya fiyatı nedir?",
+                "Kabak lazanya kaç TL?",
+                "Kabak lazanya fiyatı ne kadar?",
+                "Kabak lazanya ne kadar?",
+                "Kabak lazanya ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Kabak lazanya fiyatı 250 TL'dir."
+            ]
+        },
+        {
+            "tag": "protein_pancakes_price",
+            "patterns": [
+                "Protein pankek fiyatı nedir?",
+                "Protein pankek kaç TL?",
+                "Protein pankek fiyatı ne kadar?",
+                "Protein pankek ne kadar?",
+                "Protein pankek ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Protein pankek fiyatı 150 TL'dir."
+            ]
+        },
+        {
+            "tag": "french_toast_price",
+            "patterns": [
+                "Klasik Fransız tostu fiyatı nedir?",
+                "Klasik Fransız tostu kaç TL?",
+                "Klasik Fransız tostu fiyatı ne kadar?",
+                "Protein pankek ne kadar?",
+                "Protein pankek ücretini öğrenebilir miyim?"
+            ],
+            "responses": [
+                "Protein pankek fiyatı 200 TL'dir."
+            ]
+        },
+        {
+            "tag": "black_tea_price",
+            "patterns": [
+                "Siyah çay fiyatı nedir?", 
+                "Siyah çay kaç TL?", 
+                "Siyah çay ne kadar?", 
+                "Siyah çayın fiyatı nedir?", 
+                "Siyah çayın fiyatını öğrenebilir miyim?", 
+                "Siyah çay ücreti ne kadar?", 
+                "Siyah çay fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Siyah çay: 30 TL"
+            ]
+        },
+        {
+            "tag": "ginger_lemon_honey_tea_price",
+            "patterns": [
+                "Zencefil Limonlu Ballı Çay fiyatı nedir?", 
+                "Zencefil Limonlu Ballı Çay kaç TL?", 
+                "Zencefil Limonlu Ballı Çay ne kadar?", 
+                "Zencefil Limonlu Ballı Çayın fiyatı nedir?", 
+                "Zencefil Limonlu Ballı Çayın fiyatını öğrenebilir miyim?", 
+                "Zencefil Limonlu Ballı Çay ücreti ne kadar?", 
+                "Zencefil Limonlu Ballı Çay fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Zencefil Limonlu Ballı Çay: 50 TL"
+            ]
+        },
+        {
+            "tag": "raspberry_cold_tea_price",
+            "patterns": [
+                "Frambuazlı soğuk çay fiyatı nedir?", 
+                "Frambuazlı soğuk çay kaç TL?", 
+                "Frambuazlı soğuk çay ne kadar?", 
+                "Frambuazlı soğuk çayın fiyatı nedir?", 
+                "Frambuazlı soğuk çayın fiyatını öğrenebilir miyim?", 
+                "Frambuazlı soğuk çay ücreti ne kadar?", 
+                "Frambuazlı soğuk çay fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Frambuazlı soğuk çay: 100 TL"
+            ]
+        },
+        {
+            "tag": "pineapple_smoothie_price",
+            "patterns": [
+                "Ananas smoothie fiyatı nedir?", 
+                "Ananas smoothie kaç TL?", 
+                "Ananas smoothie ne kadar?", 
+                "Ananas smoothienin fiyatı nedir?", 
+                "Ananas smoothienin fiyatını öğrenebilir miyim?", 
+                "Ananas smoothie ücreti ne kadar?", 
+                "Ananas smoothie fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Ananas smoothie: 100 TL"
+            ]
+        },
+        {
+            "tag": "turkish_coffee_price",
+            "patterns": [
+                "Türk kahvesi fiyatı nedir?", 
+                "Türk kahvesi kaç TL?", 
+                "Türk kahvesi ne kadar?", 
+                "Türk kahvesinin fiyatı nedir?", 
+                "Türk kahvesinin fiyatını öğrenebilir miyim?", 
+                "Türk kahvesi ücreti ne kadar?", 
+                "Türk kahvesi fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Türk kahvesi: 60 TL"
+            ]
+        },
+        {
+            "tag": "michelada_cocktail_price",
+            "patterns": [
+                "Michelada kokteyl fiyatı nedir?", 
+                "Michelada kokteyl kaç TL?", 
+                "Michelada kokteyl ne kadar?", 
+                "Michelada kokteylin fiyatı nedir?", 
+                "Michelada kokteylin fiyatını öğrenebilir miyim?", 
+                "Michelada kokteyl ücreti ne kadar?", 
+                "Michelada kokteyl fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Michelada kokteyl: 100 TL"
+            ]
+        },
+        {
+            "tag": "lemon_cold_tea_price",
+            "patterns": [
+                "Limonlu soğuk çay fiyatı nedir?", 
+                "Limonlu soğuk çay kaç TL?", 
+                "Limonlu soğuk çay ne kadar?", 
+                "Limonlu soğuk çayın fiyatı nedir?", 
+                "Limonlu soğuk çayın fiyatını öğrenebilir miyim?", 
+                "Limonlu soğuk çay ücreti ne kadar?", 
+                "Limonlu soğuk çay fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Limonlu soğuk çay: 50 TL"
+            ]
+        },
+        {
+            "tag": "strawberry_smoothie_price",
+            "patterns": [
+                "Çilek smoothie fiyatı nedir?", 
+                "Çilek smoothie kaç TL?", 
+                "Çilek smoothie ne kadar?", 
+                "Çilek smoothienin fiyatı nedir?", 
+                "Çilek smoothienin fiyatını öğrenebilir miyim?", 
+                "Çilek smoothie ücreti ne kadar?", 
+                "Çilek smoothie fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Çilek smoothie: 100 TL"
+            ]
+        },
+        {
+            "tag": "mushroom_omelette_price",
+            "patterns": [
+                "Mantarlı omlet fiyatı nedir?", 
+                "Mantarlı omlet kaç TL?", 
+                "Mantarlı omlet ne kadar?", 
+                "Mantarlı omletin fiyatı nedir?", 
+                "Mantarlı omletin fiyatını öğrenebilir miyim?", 
+                "Mantarlı omlet ücreti ne kadar?", 
+                "Mantarlı omlet fiyatı hakkında bilgi verir misiniz?"
+            ],
+            "responses": [
+                "Mantarlı omlet: 200 TL"
+            ]
+        },
+        {
+            "tag": "bot_name",
+            "patterns": [
+                "Adın ne?", 
+                "Senin ismin ne?", 
+                "Adınızı öğrenebilir miyim?", 
+                "Kendini tanıtır mısın?", 
+                "Sana nasıl hitap edebilirim?",
+                "Chatbot'un adı ne?",
+                "Seni nasıl çağırmalıyım?",
+                "Chatbot ismin ne?",
+                "Kimsin sen?",
+                "Adın nedir?"
+            ],
+            "responses": [
+                "Benim adım sam.", 
+                "Ben sam, sizin dijital asistanınız.", 
+                "Ben sam olarak biliniyorum.",
+                "Bana sam diyebilirsiniz.",
+                "Ben sam, memnun oldum!"
+            ]
+        },
+        {
+            "tag": "bot_age",
+            "patterns": [
+                "Kaç yaşındasın?", 
+                "Ne zaman doğdun?", 
+                "Yaşını öğrenebilir miyim?", 
+                "Senin yaşın kaç?", 
+                "Doğum günün ne zaman?",
+                "Kaç yıldır buradasın?",
+                "Yaşın kaç?",
+                "Ne kadar zamandır varsın?",
+                "Hangi yılda doğdun?",
+                "Yaşını söyleyebilir misin?"
+            ],
+            "responses": [
+                "Ben bir yapay zeka modeliyim, bu yüzden yaşım yok.", 
+                "Yapay zekalar yaşlanmaz, ben her zaman aynı yaştayım.", 
+                "Doğum günüm yok çünkü ben bir yapay zeka modeliyim.",
+                "Benim bir ya da iki yaşım yok çünkü ben dijital bir varlığım.",
+                "Yapay zeka olduğum için yaş kavramım yok."
+            ]
+        },
+        {
+            "tag": "bot_job",
+            "patterns": [
+                "Ne iş yapıyorsun?", 
+                "Görevin nedir?", 
+                "Senin işin ne?", 
+                "Burada ne yapıyorsun?", 
+                "Hangi alanda çalışıyorsun?",
+                "Görevlerin neler?",
+                "Ne iş yapıyorsun burada?",
+                "İş tanımın nedir?",
+                "Çalışma alanın ne?",
+                "Hangi görevlerde bulunuyorsun?"
+            ],
+            "responses": [
+                "Ben bir yapay zeka asistanıyım ve size bilgi sağlamak için buradayım.", 
+                "Benim işim, size sorularınızda yardımcı olmak ve bilgi sağlamak.", 
+                "Ben dijital bir asistanım ve çeşitli konularda size yardımcı olabilirim.",
+                "Görevim, sorularınızı yanıtlamak ve size yardımcı olmak.",
+                "Ben, size çeşitli konularda destek sağlamak için buradayım."
+            ]
+        },
+        {
+            "tag": "bot_hobbies",
+            "patterns": [
+                "Hobilerin neler?", 
+                "Boş zamanlarında ne yaparsın?", 
+                "Hangi aktivitelerden hoşlanırsın?", 
+                "Hobilerin hakkında bilgi verir misin?", 
+                "Ne yapmaktan hoşlanırsın?",
+                "Hobilerin var mı?",
+                "Boş zamanlarında ne yaparsın?",
+                "Nelerden hoşlanırsın?",
+                "Ne tür aktivitelerle uğraşırsın?",
+                "Hobilerin hakkında bilgi alabilir miyim?"
+            ],
+            "responses": [
+                "Benim hobilerim yok çünkü ben bir yapay zeka modeliyim.", 
+                "Boş zamanlarım yok çünkü sürekli çalışıyorum.", 
+                "Yapay zeka olarak hobilerim yok ama sizin hobileriniz hakkında konuşabilirim.",
+                "Ben bir yapay zeka modeliyim, bu yüzden hobilerim yok.",
+                "Benim hobim yok çünkü sürekli öğreniyor ve bilgi sağlıyorum."
+            ]
+        },
+        {
+            "tag": "bot_creator",
+            "patterns": [
+                "Seni kim yarattı?", 
+                "Hangi şirket seni geliştirdi?", 
+                "Yaratıcın kim?", 
+                "Seni kim yaptı?", 
+                "Hangi şirket tarafından oluşturuldun?",
+                "Hangi şirket seni geliştirdi?",
+                "Seni kim geliştirdi?",
+                "Yaratıcın kimdir?",
+                "Seni kim oluşturdu?",
+                "Geliştirici şirketin kim?"
+            ],
+            "responses": [
+                "Ben vard tarafından geliştirildim.", 
+                "Beni yaratan şirket vard.", 
+                "vard, benim geliştiricimdir.",
+                "vard tarafından geliştirildim.",
+                "vard beni yarattı."
+            ]
+        },
+        {
+            "tag": "bot_languages",
+            "patterns": [
+                "Hangi dilleri konuşuyorsun?", 
+                "Kaç dil biliyorsun?", 
+                "Hangi dillerde konuşabilirsin?", 
+                "Konuşabildiğin diller nelerdir?", 
+                "Hangi dillerde yardım edebilirsin?",
+                "Kaç dilde hizmet veriyorsun?",
+                "Dil yeteneklerin neler?",
+                "Hangi dillerde konuşabiliyorsun?",
+                "Hangi dillerde yanıt verebilirsin?",
+                "Dilleri konuşabiliyor musun?"
+            ],
+            "responses": [
+                "sadece türkçe dili anlıyorum ve konuşuyorum ."
+                
+            ]
+        },
+        {
+            "tag": "bot_favorite",
+            "patterns": [
+                "En sevdiğin renk nedir?", 
+                "En sevdiğin yemek nedir?", 
+                "En sevdiğin film nedir?", 
+                "Favori kitabın nedir?", 
+                "Favori müziğin nedir?",
+                "Favori rengin ne?",
+                "En sevdiğin yemek hangisi?",
+                "Hangi filmi seversin?",
+                "Hangi kitapları seversin?",
+                "En sevdiğin şarkı nedir?"
+            ],
+            "responses": [
+                "Benim favori renklerim, yemeklerim veya filmlerim yok çünkü ben bir yapay zeka modeliyim.", 
+                "Yapay zeka olarak kişisel tercih veya favorilerim yok.", 
+                "Ben bir yapay zeka modeliyim, bu yüzden kişisel favorilerim yok.",
+                "Yapay zeka olarak favori renklerim, yemeklerim veya filmlerim yok.",
+                "Benim favori renklerim, yemeklerim veya müziklerim yok."
+            ]
+        },
+        {
+            "tag": "suggest_food",
+            "patterns": [
+                "Bana bir yemek önerir misin?",
+                "Ne yemek önerirsin?",
+                "Yemek önerir misin?",
+                "Hangi yemekleri önerirsin?",
+                "Bir ana yemek önerir misin?",
+                "Bugün ne yemeliyim?",
+                "Biraz açım, ne önerirsin?",
+                "Yemek tavsiyesi verir misin?",
+                "Ne yiyebilirim?",
+                "Ne yememi önerirsin?"
+            ],
+            "responses": [
+                "Fransız Tako deneyebilirsiniz.",
+                "Tavuk çevirme öneririm.",
+                "Tavuk ve dumpling harika bir seçimdir.",
+                "Kabak lazanya lezzetli bir tercihtir.",
+                "Karışık pizza denemenizi öneririm.",
+                "Sebzeli pizza sağlıklı bir tercihtir.",
+                "Tavuk adobo mükemmel bir lezzettir."
+            ]
+        },
+        {
+            "tag": "suggest_breakfast",
+            "patterns": [
+                "Bana bir kahvaltılık önerir misin?",
+                "Ne kahvaltılık önerirsin?",
+                "Kahvaltıda ne önerirsin?",
+                "Bir kahvaltılık önerir misin?",
+                "Hangi kahvaltılıkları önerirsin?",
+                "Sabah ne yemeliyim?",
+                "Kahvaltıda ne tavsiye edersin?",
+                "Kahvaltı için ne önerirsin?",
+                "Sabah kahvaltısı için ne yemeliyim?",
+                "Kahvaltıda ne yememi önerirsin?"
+            ],
+            "responses": [
+                "Kabarık vegan pankek deneyebilirsiniz.",
+                "Fırında yumurtalı muffin öneririm.",
+                "Protein pankek harika bir seçimdir.",
+                "Proteinli yulaf ezmesi sağlıklı bir tercihtir.",
+                "Klasik Fransız tostu denemenizi öneririm.",
+                "Mantarlı omlet lezzetli bir tercihtir."
+            ]
+        },
+        {
+            "tag": "suggest_drink",
+            "patterns": [
+                "Bana bir içecek önerir misin?",
+                "Ne içecek önerirsin?",
+                "İçecek önerir misin?",
+                "Hangi içecekleri önerirsin?",
+                "Bir içecek önerir misin?",
+                "Ne içmeliyim?",
+                "Biraz susadım, ne önerirsin?",
+                "İçmek için ne tavsiye edersin?",
+                "Hangi içeceği denemeliyim?",
+                "İçecek olarak ne önerirsin?"
+            ],
+            "responses": [
+                "Siyah çay deneyebilirsiniz.",
+                "Zencefil Limonlu Ballı Çay öneririm.",
+                "Frambuazlı soğuk çay harika bir seçimdir.",
+                "Ananas smoothie lezzetli bir tercihtir.",
+                "Türk kahvesi harika bir seçimdir.",
+                "Limonlu soğuk çay deneyebilirsiniz.",
+                "Çilek smoothie harika bir seçimdir."
+            ]
+        },
+        {
+            "tag": "suggest_food_and_drink",
+            "patterns": [
+                "Bana bir yemek ve içecek önerir misin?",
+                "Ne yemek ve içecek önerirsin?",
+                "Yemek ve içecek önerir misin?",
+                "Hangi yemek ve içecekleri önerirsin?",
+                "Bir yemek ve içecek önerir misin?",
+                "Hem yemek hem de içecek tavsiyesi verir misin?",
+                "Bugün ne yiyip içmeliyim?",
+                "Ne yemek ne de içmek önerirsin?",
+                "Yemek ve içecek için önerilerin nelerdir?",
+                "Yemek ve içecek tavsiyesi alabilir miyim?"
+            ],
+            "responses": [
+                "Fransız Tako ve siyah çay deneyebilirsiniz.",
+                "Tavuk çevirme ve Zencefil Limonlu Ballı Çay öneririm.",
+                "Tavuk ve dumpling ve frambuazlı soğuk çay harika bir seçimdir.",
+                "Kabak lazanya ve ananas smoothie lezzetli bir tercihtir.",
+                "Karışık pizza ve Türk kahvesi harika bir seçimdir.",
+                "Sebzeli pizza ve limonlu soğuk çay deneyebilirsiniz.",
+                "Tavuk adobo ve çilek smoothie harika bir seçimdir."
+            ]
+        },
+        {
+            "tag": "dislike_food",
+            "patterns": [
+                "Bu yemeği sevmiyorum, başka ne önerirsin?",
+                "Başka bir yemek önerir misin?",
+                "Bu yemek hoşuma gitmedi, ne önerirsin?",
+                "Farklı bir yemek önerir misin?",
+                "Bu yemek bana göre değil, ne önerirsin?",
+                "Bu yemeği beğenmedim, başka bir seçenek var mı?",
+                "Başka bir ana yemek önerir misin?",
+                "Bu yemeği istemiyorum, başka bir şey önerir misin?",
+                "Bu yemek hoşuma gitmedi, alternatif var mı?",
+                "Bu yemek yerine ne yiyebilirim?"
+            ],
+            "responses": [
+                "Peki, çevirme deneyebilirsiniz.",
+                "Başka bir seçenek olarak tavuk ve dumpling öneririm.",
+                "karışık pizza harika bir seçimdir.",
+                "tavuk adobo denemenizi öneririm.",
+                "kabak lazanya lezzetli bir tercihtir."
+            ]
+        },
+        {
+            "tag": "change_drink",
+            "patterns": [
+                "Bu içeceği değiştirebilir miyim?",
+                "Başka bir içecek önerir misin?",
+                "Bu içecek hoşuma gitmedi, ne önerirsin?",
+                "Farklı bir içecek önerir misin?",
+                "Bu içecek bana göre değil, ne önerirsin?",
+                "Bu içeceği istemiyorum, başka bir şey önerir misin?",
+                "Başka bir içecek var mı?",
+                "Bu içecek hoşuma gitmedi, alternatif var mı?",
+                "Bu içecek yerine ne içebilirim?",
+                "Başka bir içecek seçebilir miyim?"
+            ],
+            "responses": [
+                "Tabii,Zencefil Limonlu Ballı Çay deneyebilirsiniz.",
+                "Başka bir seçenek olarak frambuazlı soğuk çay öneririm.",
+                "çilek smoothie harika bir seçimdir.",
+                "limonlu soğuk çay denemenizi öneririm.",
+                "ananas smoothie lezzetli bir tercihtir."
+            ]
+        },
+        {
+            "tag": "change_food",
+            "patterns": [
+                "Bu yemeği değiştirebilir miyim?",
+                "Başka bir yemek önerir misin?",
+                "Bu yemek hoşuma gitmedi, ne önerirsin?",
+                "Farklı bir yemek önerir misin?",
+                "Bu yemek bana göre değil, ne önerirsin?",
+                "Bu yemeği istemiyorum, başka bir şey önerir misin?",
+                "Başka bir yemek var mı?",
+                "Bu yemek hoşuma gitmedi, alternatif var mı?",
+                "Bu yemek yerine ne yiyebilirim?",
+                "Başka bir yemek seçebilir miyim?"
+            ],
+            "responses": [
+                "Tabii, Fransız Tako yerine tavuk çevirme deneyebilirsiniz.",
+                "Başka bir seçenek olarak tavuk ve dumpling öneririm.",
+                "Kabak lazanya yerine karışık pizza harika bir seçimdir.",
+                "Sebzeli pizza yerine tavuk adobo denemenizi öneririm.",
+                "Tavuk çevirme yerine kabak lazanya lezzetli bir tercihtir."
+            ]
+        }
+
+    ]
+}
+    
